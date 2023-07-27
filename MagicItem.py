@@ -1,7 +1,8 @@
 from enum import Enum
-from item import item
+from Item import item
 
-class type_m_i(Enum):
+
+class TypeMagicItem(Enum):
     ARMOR_SHIELD = 1
     MISC_ITEM = 2
     POTION = 3
@@ -12,12 +13,15 @@ class type_m_i(Enum):
     WEAPON = 8
     NON_WEAPON = 9
 
-class magic_item(item):
+
+class MagicItem(item):
     def __init__(self):
+        super().__init__()
         pass
 
     def __init__(self, type_m_i):
+        super().__init__()
         pass
 
-    def get():
+    def get(self):
         pass
